@@ -1,3 +1,21 @@
 /**
-	Incluir aquí las reglas css propias de este proyecto 
+	Incluir aqui las reglas css propias de este proyecto 
 */
+
+.ei-barra-sup, .ci-botonera {
+    padding: 9px 0 4px 0;
+    
+}
+
+.ei-cuadro-pag .ef-numero {
+    width: 30px;
+}
+
+.dhx_combo_box, .dhx_combo_list {
+    margin-left: 4px !important;
+    width: 300px !important;    
+}
+
+.dhx_combo_input {
+    width: 200px !important;    
+}
