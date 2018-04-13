@@ -29,3 +29,12 @@ INSERT INTO apex_usuario_grupo_acc_item (proyecto, usuario_grupo_acc, item_id, i
 	'2'  --item
 );
 --- FIN Grupo de desarrollo 0
+
+--- INICIO Grupo de desarrollo 14
+INSERT INTO apex_usuario_grupo_acc_item (proyecto, usuario_grupo_acc, item_id, item) VALUES (
+	'turismo', --proyecto
+	'admin', --usuario_grupo_acc
+	NULL, --item_id
+	'14000020'  --item
+);
+--- FIN Grupo de desarrollo 14

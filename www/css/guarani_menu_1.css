@@ -1,0 +1,172 @@
+.toba_ventana_menu {
+	z-index: 5;
+	overflow: visible;
+	background-color: white;
+	position:absolute;
+	left:4px;
+	top:35px;
+	width: 241px;
+	/*display: none;*/
+	visibility: hidden;
+}
+
+.toba_buscar_menu {
+	position: relative;
+	display: none;
+	overflow: auto;
+	border: 1px solid #DDD;
+	color: black;
+	width: 239px;
+}
+
+.toba_buscar_menu .toba_elemento_menu {
+	display: none;
+}
+
+.toba_buscar_barra_menu {
+    border-bottom: 1px solid #DDD;
+    border-left: 1px solid #DDD;
+    border-right: 1px solid #DDD;
+    padding-bottom: 10px;
+    padding-left: 4px;
+    padding-top: 10px;
+}
+
+.toba_buscar_barra_menu input[type='text'] {
+	color: black;
+}
+
+.toba_buscar_barra_menu img {
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+#busqueda_filtro {
+	margin-top: 10px;
+	margin-left: 62px;
+}
+
+.toba_elemento_menu {
+	margin-bottom: 5px;
+	padding: 5px;
+	cursor: pointer;
+	font-weight: normal;
+	color: black;
+}
+
+ul.horizontal a, ul.horizontal a:visited, ul.horizontal a.carpeta {
+	padding: 4px 0 4px 4px;
+	display: block;
+	border-bottom: none medium;
+	color: #000;
+}
+
+ul.horizontal li:last-child {
+	border-bottom: 1px solid #DDD;
+}
+
+ul.horizontal, ul.horizontal li {
+	margin:0;
+	padding:0;
+	list-style-type:none;
+	font-size:100%;
+}
+
+ul.horizontal {
+	position: relative;
+	cursor: default;
+	width: auto; /*239px;*/
+	padding: 0px;
+	border-left: 1px solid #DDDDDD;
+	border-right: 1px solid #DDDDDD;
+}
+	
+ul.horizontal li {
+	width: auto; /*236px;*/
+	position: relative;
+	text-align: left;
+}
+
+ul.horizontal img {
+	vertical-align:middle;
+	margin-right: 2px;
+}
+
+* html ul.horizontal li {
+	margin:0 -10.55em 0 10.55em;
+}
+
+ul.horizontal ul {
+	z-index: 2020;
+	padding: 0;
+	cursor: default;
+	position: absolute;
+	top: auto;
+	width: 8.2em;
+	margin: 0 -10.55em 0 200px;
+	left: -2000px;
+	background-color: white;
+	padding-right: 2px;
+}
+	
+ul.horizontal ul li {
+	width: auto;
+	left: auto;
+	margin: -1px 0 0 0;
+}
+
+ul.horizontal ul.wider, ul.horizontal ul.wider li {
+	width:12.2em;
+}
+
+@media Screen, Projection { 
+	ul.horizontal li:hover > ul { left:auto; }
+	ul.horizontal ul li:hover > ul { top:0; }
+	}
+
+ul.horizontal a, ul.horizontal a:visited {
+	font-family: Tahoma, Verdana, sans-serif;
+	font-size: 11px;
+	text-decoration: none;
+	white-space: nowrap;
+	line-height: 18px;	
+	margin-right: 0px !important;
+	background-color: white !important;
+	border: none !important;
+}	
+
+ul.horizontal a.rollover, .toba_elemento_menu:hover {
+	background-color: #2093D1 !important;
+}
+
+ul.horizontal a:hover, ul.horizontal a:focus, ul.horizontal a.rollover, ul.horizontal a.rollover:visited {
+	background-color: #2093D1 !important;
+	color: #FFF !important;
+	cursor: pointer;
+}
+
+ul.horizontal a { float:left; }
+@media Screen, Projection { ul.horizontal a { float:none; } }
+ul.horizontal a:not(:nth-child(n)) { float:left; }
+ul.horizontal ul a { float:none !important; }
+@media screen, projection {
+	* html ul.horizontal li {
+		display:inline; 
+		f\loat:left; 
+		/*background: #E9E8E8;*/ 
+		}
+	}
+* html ul.horizontal li { position:static; }
+* html ul.horizontal a { position:relative; }
+
+ul[class^="horizontal"] ul { 
+	width: auto;
+	min-width: 200px;
+}
+
+ul[class^="horizontal"] ul { displa\y:block; }
+
+
+a.menu-link-alt {
+	text-decoration: underline !important;
+}

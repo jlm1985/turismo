@@ -33,7 +33,7 @@ class tp_normal extends toba_tp_normal {
     protected function info_usuario() {
 
         echo '<div class="enc-usuario">';
-        $url = toba::vinculador()->crear_vinculo(null, 14000007, null, array('menu' => 1));
+        $url = toba::vinculador()->crear_vinculo(null, 14000020, null, array('menu' => 1));
         echo "<span class='enc-usuario-nom'>";
         echo "<a href='$url' class='enc-usuario-id' title='Permite cambiar la password'>";
         echo toba_recurso::imagen_proyecto('worker.png', true);

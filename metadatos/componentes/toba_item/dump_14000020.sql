@@ -1,16 +1,16 @@
 ------------------------------------------------------------
---[2]--  Inicio 
+--[14000020]--  Cambiar contraseña 
 ------------------------------------------------------------
 
 ------------------------------------------------------------
 -- apex_item
 ------------------------------------------------------------
 
---- INICIO Grupo de desarrollo 0
+--- INICIO Grupo de desarrollo 14
 INSERT INTO apex_item (item_id, proyecto, item, padre_id, padre_proyecto, padre, carpeta, nivel_acceso, solicitud_tipo, pagina_tipo_proyecto, pagina_tipo, actividad_buffer_proyecto, actividad_buffer, actividad_patron_proyecto, actividad_patron, nombre, descripcion, punto_montaje, actividad_accion, menu, orden, solicitud_registrar, solicitud_obs_tipo_proyecto, solicitud_obs_tipo, solicitud_observacion, solicitud_registrar_cron, prueba_directorios, zona_proyecto, zona, zona_orden, zona_listar, imagen_recurso_origen, imagen, parametro_a, parametro_b, parametro_c, publico, redirecciona, usuario, exportable, creacion, retrasar_headers) VALUES (
 	NULL, --item_id
 	'turismo', --proyecto
-	'2', --item
+	'14000020', --item
 	NULL, --padre_id
 	'turismo', --padre_proyecto
 	'1', --padre
@@ -19,16 +19,16 @@ INSERT INTO apex_item (item_id, proyecto, item, padre_id, padre_proyecto, padre,
 	'web', --solicitud_tipo
 	'turismo', --pagina_tipo_proyecto
 	'tp_normal', --pagina_tipo
-	'toba', --actividad_buffer_proyecto
-	'0', --actividad_buffer
-	'toba', --actividad_patron_proyecto
-	'especifico', --actividad_patron
-	'Inicio', --nombre
-	'', --descripcion
+	NULL, --actividad_buffer_proyecto
+	NULL, --actividad_buffer
+	NULL, --actividad_patron_proyecto
+	NULL, --actividad_patron
+	'Cambiar contraseña', --nombre
+	NULL, --descripcion
 	'14000001', --punto_montaje
-	'item_inicial.php', --actividad_accion
+	NULL, --actividad_accion
 	'1', --menu
-	'0', --orden
+	'1', --orden
 	'0', --solicitud_registrar
 	NULL, --solicitud_obs_tipo_proyecto
 	NULL, --solicitud_obs_tipo
@@ -39,8 +39,8 @@ INSERT INTO apex_item (item_id, proyecto, item, padre_id, padre_proyecto, padre,
 	NULL, --zona
 	NULL, --zona_orden
 	'0', --zona_listar
-	'proyecto', --imagen_recurso_origen
-	'inicio.png', --imagen
+	'apex', --imagen_recurso_origen
+	'cerrar.png', --imagen
 	NULL, --parametro_a
 	NULL, --parametro_b
 	NULL, --parametro_c
@@ -48,7 +48,19 @@ INSERT INTO apex_item (item_id, proyecto, item, padre_id, padre_proyecto, padre,
 	NULL, --redirecciona
 	NULL, --usuario
 	'0', --exportable
-	'2018-04-08 12:49:21', --creacion
+	'2018-04-13 13:39:05', --creacion
 	'0'  --retrasar_headers
 );
---- FIN Grupo de desarrollo 0
+--- FIN Grupo de desarrollo 14
+
+------------------------------------------------------------
+-- apex_item_objeto
+------------------------------------------------------------
+INSERT INTO apex_item_objeto (item_id, proyecto, item, objeto, orden, inicializar) VALUES (
+	NULL, --item_id
+	'turismo', --proyecto
+	'14000020', --item
+	'14000058', --objeto
+	'0', --orden
+	NULL  --inicializar
+);

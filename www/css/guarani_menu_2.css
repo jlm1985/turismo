@@ -1,0 +1,119 @@
+.toba_next_step_menu {
+	display: inline-block;
+	color: #fff;
+	padding: 6px;
+	font-weight: bold;
+}
+
+.toba_next_step_menu + span {
+	color: #fff;
+}
+
+.toba_ventana_menu {
+	z-index: 5;
+	width: 400px;
+	height: 400px;
+	overflow: hidden;
+	border: 1px solid #DDD;
+	background-color: white;
+	position:absolute;
+	left:4px;
+	top:35px;
+	display: none;
+}
+
+.toba_slider_menu {
+	height: 360px;
+	position: relative;
+}
+
+.toba_buscar_menu {
+	height: 360px;
+	position: relative;
+	display: none;
+	overflow: auto;
+}
+
+.toba_buscar_menu .toba_elemento_menu {
+	display: none;
+}
+
+.toba_nivel_menu {
+	height: 360px;
+	width: 400px;
+	float: left;
+}
+
+.toba_el_cont_menu {
+	position: absolute;
+	left: 20px;
+	right: 15px;
+	top: 0px;
+	bottom: 0px;
+	overflow: auto;
+}
+
+.toba_opciones_menu {
+	position: relative;
+	height: 360px;
+	overflow: auto;
+}
+
+.toba_elemento_menu {
+	padding: 5px 0 5px 5px;
+	cursor: pointer;
+}
+
+.toba_elemento_menu:hover {
+	background-color: #EEEFF2;
+}
+
+.toba_volver_menu {
+	background-color: #DDD;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	bottom: 0px;
+	height: 360px;
+	width: 20px;
+	cursor: pointer;
+}
+
+.toba_volver_menu:hover {
+	background-color: #9999aa;
+}
+
+.toba_path_menu {
+	background-color: #4180BE;
+	overflow: hidden;
+}
+
+.toba_step_menu {
+	padding-left: 1px;
+	float:left;
+	cursor: pointer;
+}
+.toba_step_menu:hover {
+	background-color: #aaccff;
+	color: black;
+}
+
+.toba_next_step_menu {
+	margin-left: 2px;
+}
+
+.toba_buscar_barra_menu {
+	background-color: #DDD;
+	padding: 4px 0 4px 4px;
+	font-weight: bold;
+}
+
+.toba_buscar_barra_menu img {
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+#busqueda_filtro {
+	margin-left: 62px;
+	margin-top: 10px;
+}

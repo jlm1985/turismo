@@ -1,21 +1,567 @@
-/**
-	Incluir aqui las reglas css propias de este proyecto 
-*/
+/* -- MICRO CLEARFIX HACK -- */
 
-.ei-barra-sup, .ci-botonera {
-    padding: 9px 0 4px 0;
-    
+/* For modern browsers */
+.cf:before, .cf:after { content:""; display:table; }
+.cf:after { clear:both; }
+.cf { zoom: 1; } /* For IE 6/7 (trigger hasLayout) */
+
+/* -- BASICOS -- */
+
+.gif-nulo-tobita { display: none; }
+
+#cont_ef_form_37000095_form_datos_persperiodo_lectivo_numero,
+#cont_ef_form_37000095_form_datos_persperiodo_lectivo_piso,
+#cont_ef_form_37000095_form_datos_persperiodo_lectivo_departamento,
+#cont_ef_form_37000095_form_datos_persperiodo_lectivo_unidad,
+#cont_ef_form_37000095_form_datos_persprocedencia_numero,
+#cont_ef_form_37000095_form_datos_persprocedencia_piso,
+#cont_ef_form_37000095_form_datos_persprocedencia_departamento,
+#cont_ef_form_37000095_form_datos_persprocedencia_unidad {
+	margin-left: 87px !important;
 }
 
-.ei-cuadro-pag .ef-numero {
-    width: 30px;
+/* TODO: fix temporal hasta migrar a nueva versión de toba (versión actual 2.1) */
+
+#nodo_ef_form_38000789_formulariocausa_nombre label {
+	width: 115px;
+	white-space: wrap !important;
 }
 
-.dhx_combo_box, .dhx_combo_list {
-    margin-left: 4px !important;
-    width: 300px !important;    
+#ef_form_38000789_formulariocausa_nombre {
+	width: 95%;
 }
 
-.dhx_combo_input {
-    width: 200px !important;    
+body {
+	background-color: #F7F7F7 !important;
+}
+
+.login-titulo {
+	margin-top: 100px;
+}
+
+fieldset {
+	border: 1px solid #DDD;
+	margin: 10px 0;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+/* -- MENU -- */
+
+.buscar_menu_1 #buscar_text { width: 66%; }
+.buscar_menu_2 #buscar_text { width: 77%; }
+
+/* -- ARBOL -- */
+
+.ei-arbol-raiz li:first-child { border-top: none medium; }
+.ei-arbol-nodo { padding: 4px; }
+
+.ei-arbol-nodo-seleccionado {
+	border: 1px dotted #4180BE !important;
+	padding: 4px;
+}
+
+.ei-arbol-nombre {
+	position: relative;
+	top: -4px;
+}
+
+/* -- EFs -- */
+
+.ef-fijo { padding: 4px; }
+
+/* -- MENSAJES -- */
+
+.mensaje {
+	border: 1px solid #DDD;
+	margin-bottom: 5px;
+}
+
+/* -- ELEMENTOS DE ANTEOJITO E INTERFAZ -- */
+
+.ei-base {
+	background-color: #FFF;
+	border: 1px solid #DDDDDD;
+}
+
+/* -- SELECCION -- */
+
+.ei-cuadro-fila-sel, .ei-ml-fila-selec, .ei-filtro-fila-selec {
+	background-color: #2093D1 !important;
+}
+
+/* --  BOTONERA -- */
+
+.ei-botonera { margin-bottom: 20px; }
+.ci-botonera-abajo { margin-bottom: 0; }
+
+/* -- FILTROS -- */
+
+.ei-base {
+	/*margin-bottom: 20px !important;*/
+}
+
+/* -- BARRAS -- */
+
+.ei-barra-wiz-horiz-tit { background-color: #DDD; }
+.ci-wiz-toc-horiz-pant-pasada, .ci-wiz-toc-horiz-pant-actual { font-weight: bold; }
+
+.ci-barra-sup {
+	background-color: #4180BE;
+	padding: 5px 0;
+}
+
+.ei-barra-sup {
+	border: medium none;
+	padding: 4px;
+}
+
+.ei-cuadro-barra-sup, .ei-form-barra-sup {
+	background-color: #EEEEEE;
+}
+
+.ei-form-barra-sup > span.ei-barra-sup-tit,
+.ei-cuadro-barra-sup > span.ei-barra-sup-tit {
+	color: #000;
+}
+
+.barra-superior {
+	background-color: #DDDDDD;
+	border-bottom: 1px solid #c7cad3;
+	border-top: 1px solid #c7cad3;
+}
+
+.barra-superior-tit {
+	padding-left: 8px;
+}
+
+.ei-filtro-barra-sup {
+	background-color: #ddd !important;
+	margin-bottom: 10px;
+	margin-top: 5px;
+	padding-left: 6px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.ei-filtro-barra-sup > span {
+	color: #252525 !important;
+	display: inline-block;
+	padding: 5px 0;
+}
+
+.ei-barra-colapsar {
+	position: relative;
+	top: 2px;
+}
+
+.item-barra {
+	padding: 8px 0;
+	color: #000;
+}
+
+.item-barra-tit {
+	text-transform: uppercase;
+}
+
+/* -- ML -- */
+
+.ei-ml-base { border: none medium !important; }
+
+.ei-cuadro-col-tit, .ei-ml-columna, .ei-filtro-columna {
+	padding: 4px 4px 4px 0;
+}
+
+/* -- TABLAS -- */
+
+.ci-simple-cont > table > tbody > tr > td { /* Hack para alinear circuitos de egresos */
+	vertical-align: top;
+}
+
+.ei-cuadro-celda-par:hover,
+.ei-cuadro-celda-impar:hover {
+	background-color: #EEEEEE;
+}
+
+.tabla-0 { border: none medium !important; }
+
+.ei-cuadro-fila { padding: 6px; }
+
+.ei-cuadro-cc-fondo > table { border-top: 1px solid #EEE; border-left: 1px solid #EEE; }
+
+.ei-cuadro-cc-fondo, .ei-ml-grilla, .ei-filtro-grilla {
+	border-top: medium none;
+	border-left: medium none;
+	border-right: 1px solid #EEEEEE;
+	border-bottom: 1px solid #EEEEEE;
+	padding: 0 !important;
+}
+
+.ei-cuadro-cc-fondo { border-right: none medium; }
+
+.ei-cuadro-col-tit, .ei-ml-columna, .ei-filtro-columna {
+	border: 1px solid #EEEEEE;
+	background-color: #eeeff2;
+	font-weight: bold;
+}
+
+.ei-cuadro-col-tit-center, .ei-ml-columna, .ei-filtro-columna {
+	border: 1px solid #EEEEEE;
+	background-color: #eeeff2;
+	font-weight: bold;
+	text-align: center;;
+}
+
+.ei-filtro-columna {
+	text-align: center;
+	padding: 3px 0;
+}
+
+.ei-cuadro-col-tit {
+	padding-bottom: 7px;
+	padding-top: 7px;
+	font-weight: bold;
+	line-height: 14px;
+}
+
+.ei-cuadro-celda-par, .ei-ml-fila, .ei-filtro-fila {
+	background-color: #F7F7F7;
+}
+
+.ei-ml-fila-subcom {
+	background-color: #bbb9b6;
+}
+
+.ei-cuadro-cc-tit-nivel-0 {
+	border: none medium !important;
+	padding: 6px !important;
+	background-color: #336597 !important;
+	font-size: 12px !important;
+	text-transform: uppercase;
+}
+
+.ei-cuadro-cc-tit-nivel-1 {
+	border: none medium !important;
+	padding: 6px !important;
+	font-size: 11px !important;
+}
+
+.ei-cuadro-cc-tit-nivel-2 {
+	border: none medium !important;
+	background-color: #ccc !important;
+}
+
+.ei-cuadro-cc-pie-nivel-0 {
+	background-color: #336597 !important;
+	color: white !important;
+	font-style: normal !important;
+	padding: 3px;
+}
+
+.ei-cuadro-cc-pie-cab-nivel-0 {
+	margin: 0 !important;
+	padding: 0 !important;
+	background-color: #336597 !important;
+}
+
+.ei-cuadro-cc-pie-nivel-1 {
+	background-color: #999 !important;
+	color: white !important;
+	padding: 3px;
+}
+
+.ei-cuadro-cc-pie-cab-nivel-1 {
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+.ei-cuadro-cc-pie-nivel-2 {
+	padding: 3px;
+	background-color: #ccc !important;
+}
+
+.ei-cuadro-cc-pie-cab-nivel-2 {
+	margin: 0 !important;
+	padding: 0 !important;
+	background-color: #ccc !important;
+}
+
+/* -- SCROLL -- */
+
+.ei-cuadro-scroll {
+	padding: 4px 0 4px 0;
+}
+
+/* -- TABS -- */
+
+.ci-tabs-h-cont {
+	border-left: 1px solid #EEEEEE;
+	border-right: 1px solid #EEEEEE;
+	border-bottom: 1px solid #EEEEEE;
+	border-top: 1px solid #EEEEEE;
+}
+
+/* -- DIVISORES -- */
+
+hr {
+    border: 0;
+    height: 1px;
+	margin: 20px 0;
+    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.15), rgba(0,0,0,0)); 
+    background-image: -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.15), rgba(0,0,0,0)); 
+    background-image: -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.15), rgba(0,0,0,0)); 
+    background-image: -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.15), rgba(0,0,0,0)); 
+}
+
+/* -- TABS -- */
+
+.ci-tabs-h-lista {
+	background: none;
+}
+
+.ci-tabs-h-lista li {
+	padding-left: 0;
+}
+
+.ci-tabs-h-lista ul li a {
+	display: block;
+	float: left;
+	text-decoration: none;
+	position: relative;
+	font-weight: bold;
+	padding: 7px 14px;
+	color: #a1a1a1;
+	background-color: #EEEEEE;
+	border-left: 1px solid #EEEEEE;
+	border-top: 1px solid #EEEEEE;
+	border-right: 1px solid #EEEEEE;
+	-webkit-border-top-left-radius: 10px;
+	-webkit-border-top-right-radius: 10px;
+	-moz-border-radius-topleft: 10px;
+	-moz-border-radius-topright: 10px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+.ci-tabs-h-lista ul li.ci-tabs-h-solapa a {
+	color: #000;
+}
+
+.ci-tabs-h-lista ul li.ci-tabs-h-solapa-sel a {
+	background-color: #fff;
+	color: #000;
+	position: relative;
+	top: 1px;
+	z-index: 1;
+}
+
+/* -- CABECERA -- */
+
+.cabecera {
+	height: 42px;
+}
+
+/* -- Cursadas > Comisiones > Carga de Notas de Comisiones -- */
+
+#cuerpo_js_form_41000293_form_autocompletar .ei-botonera {
+	margin-bottom: 0 !important;
+}
+
+/* -- ZONAS -- */
+
+.zona-items {
+	background-color: white;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+.zona-items a {
+  display: inline-block;
+  *display: inline;
+  padding: 4px 7px;
+  margin-bottom: 0;
+  margin-right: 5px;
+  *margin-left: .3em;
+  font-size: 14px;
+  line-height: 20px;
+  *line-height: 20px;
+  color: #333333;
+  text-align: center;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+  vertical-align: middle;
+  cursor: pointer;
+  background-color: #f5f5f5;
+  *background-color: #e6e6e6;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e6e6e6));
+  background-image: -webkit-linear-gradient(top, #ffffff, #e6e6e6);
+  background-image: -o-linear-gradient(top, #ffffff, #e6e6e6);
+  background-image: linear-gradient(to bottom, #ffffff, #e6e6e6);
+  background-image: -moz-linear-gradient(top, #ffffff, #e6e6e6);
+  background-repeat: repeat-x;
+  border: 1px solid #bbbbbb;
+  *border: 0;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  border-color: #e6e6e6 #e6e6e6 #bfbfbf;
+  border-bottom-color: #a2a2a2;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe6e6e6', GradientType=0);
+  filter: progid:dximagetransform.microsoft.gradient(enabled=false);
+  *zoom: 1;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+     -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+          box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.zona-items a:hover,
+.zona-items a:active,
+.zona-items a.active,
+.zona-items a.disabled,
+.zona-items a[disabled] {
+  color: #333333;
+  background-color: #e6e6e6;
+  *background-color: #d9d9d9;
+}
+
+.zona-items a:active,
+.zona-items a.active {
+  background-color: #cccccc \9;
+}
+
+.zona-items a:first-child {
+  *margin-left: 0;
+}
+
+.zona-items a.active,
+.zona-items a:hover {
+  color: #333333;
+  text-decoration: none;
+  background-color: #e6e6e6;
+  *background-color: #d9d9d9;
+  /* Buttons in IE7 don't get borders, so darken on hover */
+
+  background-position: 0 -15px;
+  -webkit-transition: background-position 0.1s linear;
+     -moz-transition: background-position 0.1s linear;
+       -o-transition: background-position 0.1s linear;
+          transition: background-position 0.1s linear;
+}
+
+.zona-items a:focus {
+  outline: thin dotted #333;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+
+/* GUARANI */
+
+.ei-arbol-nodo {
+	font-weight: normal;
+}
+
+.ei-arbol-nodo-seleccionado {
+	font-weight: bold; 
+	border: 1px dotted #EE5500;
+}
+
+input[readonly],
+input[disabled],
+textarea[disabled],
+textarea[readonly],
+select[disabled],
+select[readonly] {
+    background-color: #DDDDDD !important;
+}
+
+.ayuda {
+	cursor: pointer;
+}
+
+.ei-botonera-centrada {
+	text-align: center;
+}
+
+/* Barra de Progreso */
+img.barra-progreso {
+ background: white url(../img/porcentaje-imagen-back.png) top left no-repeat;
+ padding: 0;
+ margin: 5px 0 0 0;
+ background-position: -1px 0;
+}
+
+.etiqueta {
+	overflow: auto;
+	height:150px;
+}
+
+.ef-multi-check {
+	white-space: normal;
+}
+
+.ef-upload-desc {
+	white-space: normal;
+	font-weight:bold;
+	padding-top: 3px;
+}
+
+.oculto {
+	visibility: hidden;
+}
+
+.js-actividad_toggle {
+	cursor: pointer;
+}
+
+.mensaje-login-ag-1 {
+	text-align: center;
+	font-weight: bold;
+	font-size: 12px;
+	margin-top: 50px;
+}
+
+.param-no-cargado-dep {
+	color: #a1a1a1;
+}
+
+.param-conflicto-nivel {
+	background-color: #fcefa1;	
+}
+
+.param-conflicto-nivel:hover {
+	background-color: #fcefa1;	
+}
+
+#cuerpo_js_form_9000181_periodo_insc_fechas .ef-combo {
+    width: 218px;
+}
+
+.ei-cuadro-cc-tabla-sum 
+.ei-cuadro-col-tit {
+    border: 1px solid #336597;
+    background-color: #336597;
+    font-size: 12px;
+}
+
+.ei-cuadro-cc-sum-nivel-0 {
+    font-size: 10px;
+}
+
+.jq-dropdown-menu li {
+    color: black;
+    font-size: 12px;
+}
+
+.jq-dropdown-text{
+    color: black;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.etiqueta_dropdown_perfil{
+    padding: 2px;
 }
